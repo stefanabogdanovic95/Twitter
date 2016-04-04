@@ -2,17 +2,36 @@ package com.twitter;
 
 import java.util.LinkedList;
 import com.twitter.poruke.TwitterPoruka;
+/**
+ * Klasa Twitter 
+ * @author Stefana Bogdanovic
+ * @version 0.2
+ *
+ */
 public class Twitter {
 	
 
+	/**
+	 * Lista twitter poruka
+	 * 
+	 */
 	private LinkedList<TwitterPoruka> poruke = new LinkedList<TwitterPoruka>();
-
+	
+	/**
+	 * Metoda koja vraca listu poruka
+	 * @return sve poruke
+	 */
 	public LinkedList<TwitterPoruka> vratiSvePoruke(){
 
 		return poruke;
 
 	}
 
+	/**
+	 * Metoda koja unosi novu twitter poruku
+	 * @param korisnik ime korisnika koji unosi poruku
+	 * @param poruka sadrzaj poruke
+	 */
 	public void unesi(String korisnik, String poruka) {
 
 		//Pravi se nova poruka i puni podacima.
@@ -29,6 +48,18 @@ public class Twitter {
 
 	}
 
+	/**
+	 * Metoda koja vraca niz poruka zadatog kapaciteta i koje u sebi sadrze zadati tag
+	 * @param maxBroj kapacitet niza koji vracamo
+	 * @param tag kljucna rec koju trazimo u listi poruka
+	 * @return niz poruka
+	 * @throws java.lang.RuntimeException ako je tag
+	 * <ul>
+	 * 		<li>null</li>
+	 * 		<li>prazan string</li>
+	 * </ul>
+	 * 
+	 */
 	public TwitterPoruka[] vratiPoruke(int maxBroj, String tag) {
 
 		if (tag==null || tag == "")
