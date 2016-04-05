@@ -38,7 +38,7 @@ public class Twitter {
 
 		TwitterPoruka tp = new TwitterPoruka();
 
-		tp.setKorisnik("korisnik");
+		tp.setKorisnik(korisnik);
 
 		tp.setPoruka(poruka);
 
@@ -95,7 +95,7 @@ public class Twitter {
 		
 				if (brojac < maxBroj){
 		
-					rezultat[brojac+1]=poruke.get(i);
+					rezultat[brojac]=poruke.get(i);
 		
 					brojac++;
 		
