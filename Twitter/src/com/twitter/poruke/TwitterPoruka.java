@@ -78,7 +78,6 @@ public class TwitterPoruka {
 
 	}
 
-
 	/**
 	 * Redefinisana metoda 'toString'
 	 * @return ime korisnika i poruku u zadatom formatu

@@ -12,7 +12,7 @@ import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**
- * @author ms
+ * @author Stefana
  *
  */
 public class TwitterPorukaTest {
@@ -91,7 +91,7 @@ public class TwitterPorukaTest {
 		for (int i = 0; i < 150; i++) {
 			poruka+="a";
 		}
-		tp.setPoruka("");
+		tp.setPoruka(poruka);
 	}
 
 
@@ -102,7 +102,7 @@ public class TwitterPorukaTest {
 	public void testToString() {
 		tp.setKorisnik("Gisa");
 		tp.setPoruka("Ja sam idiot");
-		assertEquals("KORISNIK: Gisa, PORUKA: Ja sam idiot", tp.toString());
+		assertEquals("KORISNIK:Gisa PORUKA:Ja sam idiot", tp.toString());
 	}
 
 }
